@@ -1,6 +1,8 @@
 # Poker Room
 
-![image](https://github.com/user-attachments/assets/468055f3-f1a6-4b74-b7fd-20463b40af25)
+![image](https://github.com/user-attachments/assets/00411246-3460-4fd2-9f27-1e668d880455)
+
+![image](https://github.com/user-attachments/assets/183eb6a9-5246-4d21-888e-30d9eadc1f6e)
 
 This project is a web-based card game where players compete to achieve the highest total card value over multiple rounds.
 
