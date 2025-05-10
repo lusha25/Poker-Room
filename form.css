@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("slike/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1b5e20;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 2.2em;
+    margin: 20px 0;
+    animation: fadeInScale 1.5s ease-in-out;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+fieldset {
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    margin: 12px auto;
+    padding: 12px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+legend {
+    font-weight: normal;
+}
+
+.button {
+    padding: 11px 22px;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 12px 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:disabled {
+    background-color: #424242;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #2e7d32;
+}
+
+.rules-button {
+    background-color: #4caf50;
+}
+
+.rules-button:hover {
+    background-color: #66bb6a;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 7px;
+    border-radius: 4px;
+    border: 2px solid #d4af37;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rules-container {
+    display: none;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    font-weight: normal;
+}
+
+.rules-container p {
+    margin: 10px 0;
+}
+
+.credentials {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%;
+    }
+    .button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+    .rules-container {
+        max-width: 90%;
+    }
+}

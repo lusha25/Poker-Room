@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("slike/poker_table.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1b5e20;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.table-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 500px;
+    margin: 25px auto;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.tiebreaker-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.card {
+    width: 70px;
+    height: 105px;
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+}
+
+.card.hidden {
+    opacity: 0.5;
+}
+
+h1 {
+    color: #d4af37;
+    margin: 12px 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: #d4af37;
+    margin: 8px 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.winner {
+    color: #000000;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.player-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.player {
+    border: 2px solid #d4af37;
+    padding: 18px;
+    border-radius: 10px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 12px 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.card-container {
+    display: inline-block;
+    margin: 3px;
+}
+
+.button {
+    padding: 11px 22px;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #2e7d32;
+}
+
+.reveal-button {
+    background-color: #4caf50;
+    margin: 10px 0;
+}
+
+.reveal-button:hover {
+    background-color: #66bb6a;
+}
+
+.reveal-button:disabled {
+    background-color: #424242;
+    cursor: not-allowed;
+}
+
+.new-cards-button {
+    background-color: #d32f2f;
+}
+
+.new-cards-button:hover {
+    background-color: #ef5350;
+}
+
+.new-cards-button:disabled {
+    background-color: #424242;
+    cursor: not-allowed;
+}
+
+.tiebreaker-button {
+    background-color: #ff9800;
+}
+
+.tiebreaker-button:hover {
+    background-color: #ffb300;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 0.9em;
+    display: none;
+    font-weight: bold;
+}
+
+.points, .total-score {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    font-weight: bold;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .player-row {
+        gap: 12px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .player {
+        width: 90%;
+        max-width: 320px;
+    }
+    .card {
+        width: 55px;
+        height: 82px;
+    }
+    .table-container, .tiebreaker-container {
+        min-height: 350px;
+        max-width: 90%;
+    }
+    .round {
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 45px;
+        height: 67px;
+    }
+    .player {
+        padding: 10px;
+    }
+    .button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .table-container, .tiebreaker-container {
+        min-height: 300px;
+    }
+    .round {
+        padding-top: 6px;
+    }
+}
